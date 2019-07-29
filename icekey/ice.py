@@ -136,7 +136,7 @@ class IceKey:
                          for i in range(0, len(ptext), 8)])
 
     def decrypt(self, ctext):
-        if len(ptext) % 8 != 0:
+        if len(ctext) % 8 != 0:
             raise ValueError("ciphertext size must be a multiple of 8 bytes")
         return b''.join([self.decrypt_block(ctext[i:i+8])
                          for i in range(0, len(ctext), 8)])
