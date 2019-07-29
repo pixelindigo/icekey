@@ -1,4 +1,4 @@
-from utils import gf_mult, gf_exp7
+from .utils import gf_mult, gf_exp7
 import struct
 
 # Modulo values for the S-boxes
